@@ -1,0 +1,616 @@
+{
+  "format": 1,
+  "sourceModel": "generated read-only MIT SDK snapshot; private canonical source retained",
+  "componentPaths": 64,
+  "totalExports": 66,
+  "files": [
+    {
+      "path": ".changeset/config.json",
+      "sha256": "7df7f769a33b4ca2f6f7a97c289bd7a04bb29e5f8bcab69bce7500a6b01f5315"
+    },
+    {
+      "path": ".changeset/first-mit-ui.md",
+      "sha256": "48cd282a8b2982d19cb619876505f2194cd5925620299b692c4fbd328be31805"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "0c03d327a779b9c10a34672ecc8b32635bb8672fb16008252b5a5ddc420c5edc"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "1db568548be2c06c55253b583477b8d6f91711580d1ed49306166e624324d5f7"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "5912e6e01a94f43893d100d2121b8fc8f4106e35045d4e0412f006000d505a0c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0ce754d9dbda0f14f68aaa56c5ac3be846ea731e68de83e33734704a38c44a3f"
+    },
+    {
+      "path": ".node-version",
+      "sha256": "55075b5ec4e8b31936cbbc282b8829116d1fd48f2f2f1856dee592a6650700ce"
+    },
+    {
+      "path": ".npmrc.example",
+      "sha256": "aea66bae9a26fb59e937166b3fdc51891bd18c9a932749b40655863e986cf227"
+    },
+    {
+      "path": "BRAND_USAGE.md",
+      "sha256": "f77c930cff7a9fdea79175bd3c5cda8e6cd6c856c9d282c9737bc1f8081af0e1"
+    },
+    {
+      "path": "config/font-assets.json",
+      "sha256": "52edaac169500527df1d58c57bf3bf1c8e54b3ee8a4544e13bb695e67d5153b1"
+    },
+    {
+      "path": "config/legacy-ui-baseline.json",
+      "sha256": "8b5665bdaa59bfd0ee72ff64637562b171f9775b03eb125db8c039446741b7dd"
+    },
+    {
+      "path": "config/public-api.json",
+      "sha256": "a5cb2fb3fd100aef4268645cb34ea4df7935b65bb1c9be2105fce6253717f38f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "7fb0134c228400ae2a0302416d21b046f02788c7018458a3c52f58fcd83bf127"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6e285a5493a122b3aab81865719f1c215ac5fde02a11b8d1c159b3fe8bfae670"
+    },
+    {
+      "path": "package.json",
+      "sha256": "3feb5ca184a66845df27342267231dfe017ca0f156a34c530470848e4f5cbe69"
+    },
+    {
+      "path": "packages/aqualy-ui/CHANGELOG.md",
+      "sha256": "6bd7a15848f0861d9118d93c5b59dd9e7177c90777bf5a38461fc704fd55ce3f"
+    },
+    {
+      "path": "packages/aqualy-ui/components.json",
+      "sha256": "e410172c98d8af43e5057a1e5a3bafe71324387581218c086c08305ca01a8871"
+    },
+    {
+      "path": "packages/aqualy-ui/LICENSE",
+      "sha256": "6e285a5493a122b3aab81865719f1c215ac5fde02a11b8d1c159b3fe8bfae670"
+    },
+    {
+      "path": "packages/aqualy-ui/package.json",
+      "sha256": "ba010d0432b7ab7bdf7e1948ccd2dbe14ccfd00950161de75da238f4af45c259"
+    },
+    {
+      "path": "packages/aqualy-ui/README.md",
+      "sha256": "35960ff75ff205fae5687abc62cad333d54c544934ca271b81a931f96011f7db"
+    },
+    {
+      "path": "packages/aqualy-ui/src/assets/fonts/FONT-LICENSE.txt",
+      "sha256": "930853ee1daa68554d9e35c8a9175affb74f699fad9a5da6ee5ebe76379d9137"
+    },
+    {
+      "path": "packages/aqualy-ui/src/assets/fonts/geist-medium.woff2",
+      "sha256": "94624faa7fcd9bfb7a6ec7f6d2ff869bbc5bc2d3f146969e6da454442d0c1483"
+    },
+    {
+      "path": "packages/aqualy-ui/src/assets/fonts/geist-mono.woff2",
+      "sha256": "88dd1607b0bb0b76bb5c9d1c29e0aacd472a070a61b45e94905bf53d90ca9f72"
+    },
+    {
+      "path": "packages/aqualy-ui/src/assets/fonts/geist-regular.woff2",
+      "sha256": "ecb111162d7b435473998d04ea433ed621965545a0e8a5298b8292144999676d"
+    },
+    {
+      "path": "packages/aqualy-ui/src/assets/fonts/geist-semibold.woff2",
+      "sha256": "c59d327f7e314e8b7190c34c12257ee94f519a3b22e0dbb8734c69627313ebf8"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/accordion.tsx",
+      "sha256": "21c8a15217e3d094c56427d168d7f5cfe463f15e5611f8b6024c188a33974111"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/address-input.tsx",
+      "sha256": "7eccff1c7bbb5d6f8e3d0fa0628dc00492cb792aae0af14f0c1d73d2e582ef72"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/alert-dialog.tsx",
+      "sha256": "bbb358e777649f1a3be40fdc55a5a6462e3839a9caf29dfb2a9282d765c015cf"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/alert.tsx",
+      "sha256": "8ef94b9165356027bdb975bcdff93e635bced7df36c705f620d21592af4c34a7"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/aqualy-ui-portal.tsx",
+      "sha256": "f4b4b917660b8e267a8b70e176b4618d488265153021f551453120848a15e69a"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/aqualy-ui-scope.tsx",
+      "sha256": "ebc36443a2bab8cd8eaa3c6846011fd1385a7a69f56d293470f7eec0590fb7d1"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/aspect-ratio.tsx",
+      "sha256": "0c684ffec9c79e46374ad48bad900a2afa177c25dc0fc999bc2d0a30e99fcdb8"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/avatar.tsx",
+      "sha256": "cb6a85c64cdf7799594a48bad6d5cef545fd439986e4df686b5066a1adb16f3d"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/badge.tsx",
+      "sha256": "2c7e7f0fad26bddbb5f4546b789be42b63a3cf4d4dda4c0ccfce6e4bd44f6f92"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/breadcrumb.tsx",
+      "sha256": "315593d35029abc815490cc09237d29cbb1db7c8d1058da9ec76ff557de1e458"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/button.tsx",
+      "sha256": "a07baa3d6a6f14b36a9dae8058b7000dd272bc847ffde30f8f31ba3d03a90d01"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/calendar-operations.tsx",
+      "sha256": "853b7c184a111746a6fd7bad3f7dfdc92809fd22cd1688e44ddf746973c3891c"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/calendar-pickers.tsx",
+      "sha256": "91a796cd20773c7a3909747fe862a30e9b4eac4bae2ad7f24ace81a4a793aaf9"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/calendar.tsx",
+      "sha256": "d23b2635015ec916c056da4feaacc4b0f7946503b15475324216b97585be474f"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/card.tsx",
+      "sha256": "92f066c2edb2993e436709dc2ac98d311bb55fefe7623819b1b4e45e44afa40b"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/carousel.tsx",
+      "sha256": "736c5e2fe422de3d7c3d3938cfcaca4aba6c5029018a0a84b96e454103d41965"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/chart.tsx",
+      "sha256": "a86dc23d9bec32d0acbfac1d6d9553a7eecadc92b94ea5eca3655d143434a44a"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/checkbox.tsx",
+      "sha256": "5940d46a7e4f05e38883f0544d529d5eba41456681080293f6244024dd626965"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/combobox.tsx",
+      "sha256": "c9e0e939287dcf46a1d83cd7b98d5557a4348732791a739252662915e6d6f67e"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/command.tsx",
+      "sha256": "969d026433b971405bd6698db028b250514626b47c66aeff81bdfc9f8a4fba76"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/context-menu.tsx",
+      "sha256": "56c9bf2deb1547b2e09f5475eb3321920c894302eb4ca35d14b338eefde7d0bc"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/currency-input.tsx",
+      "sha256": "7ea44c78f9258d55c3fd4da7405eaa43b0d4591e7938e7d82a22a2705b0f0422"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/data-table.tsx",
+      "sha256": "adae7b39b0b5de5b707a9f4ef0c077cacb2ee839b08f0876a2071958b0cf3c87"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/description-list.tsx",
+      "sha256": "3a91c242fe1fd74d46fac16cba33d2ae969986383f124f24be43125b8ee77c1f"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/dialog.tsx",
+      "sha256": "0c02ebcbd9498f7139633141df903ec0260d1814844034f6c2bc8efc248d1ee7"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/drawer.tsx",
+      "sha256": "a216a442a076652f95a9db71368802b791d485f8fbce9b621fa035e16b19ccb0"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/dropdown-menu.tsx",
+      "sha256": "6d0ca6b488898b50c125898b213aa932522a6a5ba07a369040decf4a170aa1af"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/empty.tsx",
+      "sha256": "51771475d5956ba0c505dd824437795500205beed886f31e60a80505703b087b"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/error-state.tsx",
+      "sha256": "12b9c1ec332bbaa5b49332e2bdfd64de047bbf11ab67b49c7c7009b963425a2b"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/field.tsx",
+      "sha256": "4c76b428d265bae9aea4bc4a0f702acb13545e3bcd78c4e6c13ec2245ae5a3e0"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/file-upload.tsx",
+      "sha256": "56123e3babf8306eab9f25b355cc6fd78d828e91b436d0d1d3880b7f33eaec8d"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/hover-card.tsx",
+      "sha256": "546a5706dc047ec740fc84a79990f813ad3e6b0a2b8658da4674ef6cbfc70072"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/input-group.tsx",
+      "sha256": "8ea8a8777cf73fda95f0e9b84f22d6d53dc23494554bac6b0d55d9abd21c8e1b"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/input-otp.tsx",
+      "sha256": "72768656283397a1ca15fea9c73b1ac5a094f512299bbb01d6f42e2d358766b6"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/input.tsx",
+      "sha256": "ecaa9bb941138d9fa034ce9d0cd6aa26d599832654499d8200fa66b5689efbeb"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/label.tsx",
+      "sha256": "683ceed2dd50441836b5e3d307f9cbce90571b87a9c5f177491e9fb497f25969"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/loading.tsx",
+      "sha256": "4a1fb555685edd5aa1111dcf8697c9dc5ea507cdfa6afddd8d028e34fe30304c"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/menubar.tsx",
+      "sha256": "55a71d5573ed235f0455ddf46808781a9bec7e94b7ab878b905799f1a459cd22"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/metric-card.tsx",
+      "sha256": "16f452cd56fed8dccd1eab7a0b3e726c8ff76fcc8672604136dea0fa1c146d29"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/multi-select.tsx",
+      "sha256": "6564b4b1b34f0d14fd15c088191f926ca0db21636b0e04391a908b5d0dc6ecee"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/navigation-menu.tsx",
+      "sha256": "c8b3fedb0526eea4125b8aa4a058844dd349994f5accf4fb615e609b064fa5d3"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/number-input.tsx",
+      "sha256": "cd6fd12475e42cfce40de8173504805231dfab2b2ed8a78110102d974d020adb"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/pagination.tsx",
+      "sha256": "5c6cbb70852b7c826bf4529a7dc189e1337ed07b9d71d15d0f9342c104117f17"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/phone-input.tsx",
+      "sha256": "31c72a72d420b77c4193768a06c86927141c222bdd6ef2699c46d1e3956ffc9f"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/popover.tsx",
+      "sha256": "86a51b69eff1f3d8da8679259fb1cbb742243a35b524862722fc9078bb11de75"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/progress.tsx",
+      "sha256": "68b0d9da54721f6a0549f2c87c0163113233a39d631a815b9195489e146b0893"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/radio-group.tsx",
+      "sha256": "5ba0e38c985d49a7d9fe851c20f8b3a0edf1efcae58be12028264d06fd69dcaa"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/resizable.tsx",
+      "sha256": "eea1bff220bf666fd7684df280885e67bbc2b5d8802defea8a8ca1242e0fbe16"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/scroll-area.tsx",
+      "sha256": "5f4cc8e07022a8bc771df44a0fc2caea7a97132a1a96678c113c41ebd5c2c2f1"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/search.tsx",
+      "sha256": "8c09a00f5fa001657adb9c3d29a75c7fbe1d831b47c4612c6d56e116f720a9a4"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/select.tsx",
+      "sha256": "e0f5bb51ec280c3a05cea1af0c3aa289489ab651182255b18956cf0405814979"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/separator.tsx",
+      "sha256": "1eb9a65d8e3d939bda05b80e57cf503d96a38d6e72c73b330274c86ebb43f100"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/sheet.tsx",
+      "sha256": "725c5b57ddda0a3733cb70df48958d244e0345b23f222d61cca3b97c83e164cc"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/sidebar.tsx",
+      "sha256": "c10f6c055d7b037ac757ac7af577c7dd96881d36b260a5bb54427dee41b09647"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/skeleton.tsx",
+      "sha256": "5d8626305def6b72cd1be3e2f114acbce3ca51a1d87baa60eb71c6031bc4ac24"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/slider.tsx",
+      "sha256": "066d8cdfd9aaa6269e51ad20e7c3a49e96abfca54b0b4c1df1e24b0e3a8ec55f"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/spinner.tsx",
+      "sha256": "c8f1a02d8b70a7fc2b7b86db4be7e6f5acb6afc47c15e628d8508f0d015e84d0"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/switch.tsx",
+      "sha256": "d475667af144dfa31bbd76ba854f0542db17b00d68281eec11ad230ad70af880"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/tabs.tsx",
+      "sha256": "b9884d2530946ce9d9d1e64f26081882e7d4ac97748c51cf320e70d8cf3d5fcb"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/textarea.tsx",
+      "sha256": "a3e2dd42928c436d7331c89272ea4a6650eca9ca86d6c5953b8d2919218cf93a"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/timeline.tsx",
+      "sha256": "13521cffdf822cc6877c1e5d7bf9bec9517f358329ef552ee4bd86bd53fe0037"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/toast.tsx",
+      "sha256": "ecc56c214ffd260773fc56c79bb0c2bded001bd85948e72059a5c1cf73776f29"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/toggle-group.tsx",
+      "sha256": "a63ebe5831d404a3b1caca083bb952f7e464bdd28f1a3b9772402b367d27df16"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/toggle.tsx",
+      "sha256": "9a9cb3b482d9b3d9174827a69b5d5acd14bdf94cdb8ceb6292c385c9d4aa3b07"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/tooltip.tsx",
+      "sha256": "6c5c3eb3cce5faab84a5d3b6c9ee11728c06532ff92a24099b251bc0f0eeeef1"
+    },
+    {
+      "path": "packages/aqualy-ui/src/components/tree.tsx",
+      "sha256": "797fe1b8b5401caec3487ad0f838dd496065a6258ad6c756c0b63c048b61ee28"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/action-menu.tsx",
+      "sha256": "48dc9f1e63741b321cdc132722d819c12c47bbf184a0009a920ed7983cba37bc"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/calendar-date.ts",
+      "sha256": "68aac9add136625546f5d12e9a3e2d157c2118762e699daf4bdf7867bd41d966"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/data-table-filters.tsx",
+      "sha256": "d7c656fa493f7c6eb6adf90701bc60993ab25ba312fa12011fc404f44b7dc71a"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/data-table-model.ts",
+      "sha256": "55ce9fb4357cb7b7b81bd458b8549d70741472095425137c0548059c34bfe881"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/data-table-url.ts",
+      "sha256": "5c6f6e9fcd4d98926002a4da9865c88f3edbb4d33e577665645dc9dd92eb624c"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/file-upload-model.ts",
+      "sha256": "231c02ffeb386ef41d173502acb79e4f82b97b8627337c2288921088973e495c"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/loading-logo.tsx",
+      "sha256": "c8bfd22e7c6b0d588bbd187037f3d234c3d755fdcbb90d5e9cc582e7f15ff88d"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/metric-model.ts",
+      "sha256": "ba7e63bd7668ad61384f96bfaad73e05a6ea7e06ff9baceb76456f3544067174"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/multi-select-model.ts",
+      "sha256": "f4ba0f01fcf60680d388048dedc6e89cd33b2a87ffb24afa9616cda78e70cc67"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/navigation-menu.tsx",
+      "sha256": "a2ead17fc386217de8c55fc8b35988ae2322e8871009e2aa0a913124b047b69a"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/pagination-model.ts",
+      "sha256": "52f322c71d6841e0765d5968e938214391dcdbda9c73a023f89eb1ec1eba86d3"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/progress-model.ts",
+      "sha256": "1844f28ee715ef389c0e8581ac1821809749986a1ac69e9984b5e03d123d22ed"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/resizable-model.ts",
+      "sha256": "bb3ae453a32e87318d96a0718242c76b08599db9f92f6a5d8b5020385ac67920"
+    },
+    {
+      "path": "packages/aqualy-ui/src/lib/utils.ts",
+      "sha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/aqualy-ui.css",
+      "sha256": "fbf2d17ca1b886936b33388e588ee35bb031a4cb8d581923ef7b8fbd0d6816a6"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-f.css",
+      "sha256": "70f42c3ad0c4121d8f86a470feec4166b93842ecae01c978a2d08322c76484db"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-g.css",
+      "sha256": "dfb30521e755f44422b1de7e170d91d0c1863eb9a0157c1f0662f6933486e496"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-h.css",
+      "sha256": "dc5069936fa6f0795c2e0600eb91b56b0215ae0924c6d86e1127a6fe4e04e199"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-i.css",
+      "sha256": "d1ebb5cee4bc86d115d193e32606def3fe81a4bada6f4515d2a79f5f147c8684"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-j.css",
+      "sha256": "1b08708290ebb3119c90a64672485f00730315802ce5cafc9f833dc921a2737b"
+    },
+    {
+      "path": "packages/aqualy-ui/src/styles/catalog-k.css",
+      "sha256": "1df62090f417f8a8129c5d87ee7e14e8c1fce0603fde3d27d91722cb8b1a5ad1"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/aqualy-ui.test.mts",
+      "sha256": "d1cd386dc998e2dc1d2b59bb7e2203325bb54511dcaf24368b80a9d59b4f1b60"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/audit.test.mts",
+      "sha256": "cea3b0d952030799dd8bf271aaa21717b91c90c1c57cb718bfbf6398cd3e28cf"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-b.test.mts",
+      "sha256": "0d992df9f96b53aaf5f7cd8fddc1686d33c880935b31001bfa8591dd950d4859"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-c-cases.tsx",
+      "sha256": "7692958db95619cf551037c006e5b2fa2eae6d2bccd3710ef0d2a0d03564c2bd"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-c.test.mts",
+      "sha256": "31771a1622ae245c505916b3df43c93318982b6aed2c5fd22a51a5b7cde23bcb"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-d-cases.tsx",
+      "sha256": "13da51a067ebcc32b1be2ec791b6eca231306f77fdfab5acdc556b67674369f5"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-d.test.mts",
+      "sha256": "9c77fc85f6d987b79ccdae1d6941428b79a5715afa71b5f61e6195f979481852"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-e-cases.tsx",
+      "sha256": "d1878dc8f27d0f91a353d9e30c15cd16551e25dc777f196371d5eca8eaf3e4e1"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-e.test.mts",
+      "sha256": "6833f9aae53c0494a66c27d3e2451fdc4ac2919511db5774f2070238ad4a13c8"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-f.test.mts",
+      "sha256": "abb861e551d64da7b3913071c566b0db76caf74c49ec9109f56915e7afce7fdb"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-g.test.mts",
+      "sha256": "cd2616fcdff3a087db38776432667a2516f0a20b1478c64fb83ae416c169adeb"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-h.test.mts",
+      "sha256": "4fa959261721fbb7913e0dc5ad1fefb61030ad3819f513b3038443f6e1e305c7"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-i.test.mts",
+      "sha256": "3e04652436ddcf283119feb3095a07735f398a8ee5790b102ab4f3329f1e90c0"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-j.test.mts",
+      "sha256": "d3568add8ba55bf4a84f28f04c70ada9475687e26d213ad95026aff0504b14a7"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog-k.test.mts",
+      "sha256": "47df755761b9ba14f0bdf277f7151bb26ed754fc91ed01aef04647d731d72397"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/catalog.test.mts",
+      "sha256": "985e6048e9ad71580252ed610b045605cd255cb22059465609eef52860c06c28"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/exports.test.mts",
+      "sha256": "5b9ba54616fd26b9e5a3957bc76d02742ef1026e829498cb661dd627ed130efd"
+    },
+    {
+      "path": "packages/aqualy-ui/tests/phone-input.test.mts",
+      "sha256": "e1fef175d493ec301e0e0c0c8f70a4a4f1c0825d014ccc4587e3d5b78ae5696a"
+    },
+    {
+      "path": "packages/aqualy-ui/THIRD_PARTY_NOTICES.md",
+      "sha256": "61e5bcf7733528cf2a922cabaa4faaf362315561cfd4d7a53cf07af86ddbe611"
+    },
+    {
+      "path": "packages/aqualy-ui/tsconfig.build.json",
+      "sha256": "2b8c6078c6c513bf50b2e2ba9e587c94137095b08b61cf44bf908129911340d4"
+    },
+    {
+      "path": "packages/aqualy-ui/tsconfig.json",
+      "sha256": "8fc561a40205b4ac5a8e291d7527d845bbff6272a325297c6b8617e4154bc0af"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "938e752c8c609b2bdce54649bab200d97b758a613d511e6c0484efbe433218fe"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "0fb360452b0231d114d0b0ad6cc76bb48fe528382f55827cf93739bf64ec79e1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d9b837b3dec72439fb39095b0832e29adba49283e389f11598a02e9850fb715b"
+    },
+    {
+      "path": "scripts/block-publication.mjs",
+      "sha256": "764191d79871770a72053c344a2710064cf9300c45b130e1f1e24e654d2acb7f"
+    },
+    {
+      "path": "scripts/build-ui.mjs",
+      "sha256": "fab8dcfd64a819aab5b7bfdfceddc3c9d3cb3bcbba5a306f62ba606bbbe85e64"
+    },
+    {
+      "path": "scripts/verify-api-audit.mjs",
+      "sha256": "8383f27476b3ccbb98d44fed94997f80f1b2bac9d9b49381f31d0bc475986075"
+    },
+    {
+      "path": "scripts/verify-c0-consumer.mjs",
+      "sha256": "6d13cd272334f3d8dd1a7043875dc5c1499198d6fde12ababc2cfa7eb99cb013"
+    },
+    {
+      "path": "scripts/verify-public-source.mjs",
+      "sha256": "4cd64f9695a6106938f04fa5ca7962086c82ea4b39aeb90b286d078f1515d246"
+    },
+    {
+      "path": "scripts/verify-release.mjs",
+      "sha256": "52f533c77b07fa1acbda7fa0b4a6ae275d72baf0e57733d9413b7bd02e70eefa"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "9c2d539022f7acda8caa633a93482834a10cfdd1e925be825c09152c9a3344e7"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "2949a85c2625686eebce95f6a262443faf3d7d75761c82af17c8a99a8afffb2a"
+    },
+    {
+      "path": "tests/fixtures/public-next/app/host.css",
+      "sha256": "35e6de6d49317e33ad2c26002185105340c71f46223953d6f87ec69931cfe2ce"
+    },
+    {
+      "path": "tests/fixtures/public-next/app/layout.tsx",
+      "sha256": "3d289e2cd0d0d370dcb9a6b304aba7d6a1983bc7865b5d6935382049c9de3a5e"
+    },
+    {
+      "path": "tests/fixtures/public-next/app/page.tsx",
+      "sha256": "40b1df21186b8de0c80262beae50c4e83fe1482574207cb323c8a93d3da04d3c"
+    },
+    {
+      "path": "tests/fixtures/public-next/app/preview.tsx",
+      "sha256": "eeddc9fa6eaed1f8688d55ce74517b999906d9721961331bb12eba614dfbd516"
+    },
+    {
+      "path": "tests/fixtures/public-next/next-env.d.ts",
+      "sha256": "879741880b6ab48da99dcc06dcc674d381c9826137b0496bf7bb368f302de9fc"
+    },
+    {
+      "path": "tests/fixtures/public-next/package.json",
+      "sha256": "2a9f1b4ebd9f8f5bbbe06ab20a9061e43232ae04ae81d0e20950b5b47fb4b4a4"
+    },
+    {
+      "path": "tests/fixtures/public-next/tsconfig.json",
+      "sha256": "4f2a0ac7271c7fa17555b7c9d241340e7427cc137e9a60d910d24021bd717293"
+    },
+    {
+      "path": "tests/package/dist.test.mjs",
+      "sha256": "15437e8cafff39513c63315002887cf44eb4f781704717e1e278d31997c9f2f8"
+    }
+  ]
+}

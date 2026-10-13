@@ -1,0 +1,2321 @@
+{
+  "task": "DS-EXTRACT-01C0",
+  "componentModules": 66,
+  "issues": [],
+  "styles": [
+    "aqualy-ui.css",
+    "catalog-f.css",
+    "catalog-g.css",
+    "catalog-h.css",
+    "catalog-i.css",
+    "catalog-j.css",
+    "catalog-k.css"
+  ],
+  "components": [
+    {
+      "file": "accordion.tsx",
+      "exports": [
+        "Accordion",
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ],
+      "imports": [
+        "@base-ui/react/accordion",
+        "lucide-react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "accordion",
+        "accordion-content",
+        "accordion-item",
+        "accordion-trigger"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "address-input.tsx",
+      "exports": [
+        "AddressInput",
+        "AddressInputProps",
+        "AddressValue"
+      ],
+      "imports": [
+        "react",
+        "#components/input-group",
+        "#components/field",
+        "#components/input",
+        "#lib/utils"
+      ],
+      "slots": [
+        "address-input"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/input-group",
+        "#components/field",
+        "#components/input"
+      ]
+    },
+    {
+      "file": "alert-dialog.tsx",
+      "exports": [
+        "AlertDialog",
+        "AlertDialogAction",
+        "AlertDialogCancel",
+        "AlertDialogContent",
+        "AlertDialogDescription",
+        "AlertDialogFooter",
+        "AlertDialogHeader",
+        "AlertDialogMedia",
+        "AlertDialogTitle",
+        "AlertDialogTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/alert-dialog",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#lib/utils"
+      ],
+      "slots": [
+        "alert-dialog-action",
+        "alert-dialog-backdrop",
+        "alert-dialog-cancel",
+        "alert-dialog-content",
+        "alert-dialog-description",
+        "alert-dialog-footer",
+        "alert-dialog-header",
+        "alert-dialog-media",
+        "alert-dialog-title",
+        "alert-dialog-trigger"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button"
+      ]
+    },
+    {
+      "file": "alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertAction",
+        "AlertDescription",
+        "AlertIcon",
+        "AlertTitle",
+        "AlertVariant"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "alert",
+        "alert-action",
+        "alert-description",
+        "alert-icon",
+        "alert-title"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "aqualy-ui-portal.tsx",
+      "exports": [
+        "AqualyUIPortalScope"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/direction-provider",
+        "#components/aqualy-ui-scope"
+      ],
+      "slots": [],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "aqualy-ui-scope.tsx",
+      "exports": [
+        "AqualyDirection",
+        "AqualyProduct",
+        "AqualyTheme",
+        "AqualyUIScope",
+        "AqualyUIScopeProps",
+        "useAqualyUIScope"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/direction-provider",
+        "#lib/utils"
+      ],
+      "slots": [],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "aspect-ratio.tsx",
+      "exports": [
+        "AspectRatio"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "aspect-ratio"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "avatar.tsx",
+      "exports": [
+        "Avatar",
+        "AvatarBadge",
+        "AvatarFallback",
+        "AvatarGroup",
+        "AvatarGroupCount",
+        "AvatarImage",
+        "AvatarSize"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/avatar",
+        "#components/button",
+        "#lib/utils"
+      ],
+      "slots": [
+        "avatar",
+        "avatar-badge",
+        "avatar-fallback",
+        "avatar-group",
+        "avatar-group-count",
+        "avatar-image"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button"
+      ]
+    },
+    {
+      "file": "badge.tsx",
+      "exports": [
+        "Badge",
+        "BadgeProps"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils",
+        "#components/spinner"
+      ],
+      "slots": [
+        "badge"
+      ],
+      "aria": [
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/spinner"
+      ]
+    },
+    {
+      "file": "breadcrumb.tsx",
+      "exports": [
+        "Breadcrumb",
+        "BreadcrumbDestination",
+        "BreadcrumbEntry",
+        "BreadcrumbProps"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/button",
+        "#lib/navigation-menu",
+        "#lib/utils"
+      ],
+      "slots": [
+        "breadcrumb"
+      ],
+      "aria": [
+        "aria-current",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/button"
+      ]
+    },
+    {
+      "file": "button.tsx",
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "imports": [
+        "@base-ui/react/button",
+        "class-variance-authority",
+        "#lib/utils"
+      ],
+      "slots": [
+        "button"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "calendar-operations.tsx",
+      "exports": [
+        "CalendarEventDialog",
+        "CalendarEventDialogProps",
+        "CalendarView",
+        "OperationsCalendar",
+        "OperationsCalendarProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/dialog",
+        "lucide-react",
+        "#components/button",
+        "#components/badge",
+        "#components/calendar-pickers",
+        "#components/aqualy-ui-scope",
+        "#components/aqualy-ui-portal",
+        "#lib/navigation-menu",
+        "#lib/calendar-date",
+        "#lib/utils"
+      ],
+      "slots": [
+        "operations-calendar"
+      ],
+      "aria": [
+        "aria-current",
+        "aria-hidden",
+        "aria-label",
+        "aria-pressed"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/badge",
+        "#components/calendar-pickers",
+        "#components/aqualy-ui-scope",
+        "#components/aqualy-ui-portal"
+      ]
+    },
+    {
+      "file": "calendar-pickers.tsx",
+      "exports": [
+        "DatePicker",
+        "DatePickerProps",
+        "DateRangePicker",
+        "DateRangePickerProps",
+        "DateTimePicker",
+        "DateTimePickerProps",
+        "TimePicker",
+        "TimePickerProps",
+        "TimeSlotPicker",
+        "TimeSlotPickerProps"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "react-day-picker",
+        "#components/calendar",
+        "#components/button",
+        "#components/popover",
+        "#components/select",
+        "#lib/calendar-date",
+        "#lib/utils"
+      ],
+      "slots": [],
+      "aria": [
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-pressed"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/calendar",
+        "#components/button",
+        "#components/popover",
+        "#components/select"
+      ]
+    },
+    {
+      "file": "calendar.tsx",
+      "exports": [
+        "Calendar",
+        "CalendarAnnotation",
+        "CalendarEvent",
+        "CalendarEventDialog",
+        "CalendarEventDialogProps",
+        "CalendarProps",
+        "CalendarView",
+        "DatePicker",
+        "DatePickerProps",
+        "DateRange",
+        "DateRangePicker",
+        "DateRangePickerProps",
+        "DateTimePicker",
+        "DateTimePickerProps",
+        "OperationsCalendar",
+        "OperationsCalendarProps",
+        "TimePicker",
+        "TimePickerProps",
+        "TimeSlotPicker",
+        "TimeSlotPickerProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/direction-provider",
+        "react-day-picker",
+        "lucide-react",
+        "#components/button",
+        "#components/select",
+        "#components/aqualy-ui-scope",
+        "#lib/navigation-menu",
+        "#lib/utils"
+      ],
+      "slots": [],
+      "aria": [
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/select",
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "card.tsx",
+      "exports": [
+        "Card",
+        "CardAction",
+        "CardContent",
+        "CardDescription",
+        "CardFooter",
+        "CardHeader",
+        "CardMedia",
+        "CardTitle"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "card",
+        "card-action",
+        "card-content",
+        "card-description",
+        "card-footer",
+        "card-header",
+        "card-media",
+        "card-title"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "carousel.tsx",
+      "exports": [
+        "Carousel",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNavigation",
+        "CarouselOptions",
+        "CarouselProps"
+      ],
+      "imports": [
+        "react",
+        "embla-carousel-react",
+        "lucide-react",
+        "#components/button",
+        "#components/aqualy-ui-scope",
+        "#lib/utils"
+      ],
+      "slots": [
+        "carousel",
+        "carousel-content",
+        "carousel-item"
+      ],
+      "aria": [
+        "aria-atomic",
+        "aria-controls",
+        "aria-current",
+        "aria-hidden",
+        "aria-label",
+        "aria-live",
+        "aria-pressed",
+        "aria-roledescription"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "chart.tsx",
+      "exports": [
+        "ChartConfig",
+        "ChartContainer",
+        "ChartData",
+        "ChartLegend",
+        "ChartTooltip",
+        "ChartTooltipContent",
+        "DataChart",
+        "DataChartProps"
+      ],
+      "imports": [
+        "react",
+        "recharts",
+        "#components/accordion",
+        "#components/spinner",
+        "#components/alert",
+        "#components/button",
+        "#components/aqualy-ui-scope",
+        "#lib/utils"
+      ],
+      "slots": [
+        "chart",
+        "chart-tooltip"
+      ],
+      "aria": [
+        "aria-label",
+        "aria-pressed"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/accordion",
+        "#components/spinner",
+        "#components/alert",
+        "#components/button",
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "checkbox.tsx",
+      "exports": [
+        "Checkbox",
+        "CheckboxField",
+        "CheckboxFieldProps",
+        "CheckboxGroup",
+        "CheckboxProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/checkbox",
+        "@base-ui/react/checkbox-group",
+        "lucide-react",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "checkbox"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-labelledby"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/field"
+      ]
+    },
+    {
+      "file": "combobox.tsx",
+      "exports": [
+        "Combobox",
+        "ComboboxOption",
+        "ComboboxProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/combobox",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/spinner",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "combobox-content"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-required"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/spinner",
+        "#components/field"
+      ]
+    },
+    {
+      "file": "command.tsx",
+      "exports": [
+        "Command",
+        "CommandDialog",
+        "CommandDialogProps",
+        "CommandEntry",
+        "CommandProps",
+        "useCommandShortcut"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/autocomplete",
+        "@base-ui/react/dialog",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/alert",
+        "#components/spinner",
+        "#lib/utils"
+      ],
+      "slots": [
+        "command-dialog"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/alert",
+        "#components/spinner"
+      ]
+    },
+    {
+      "file": "context-menu.tsx",
+      "exports": [
+        "ContextMenu",
+        "ContextMenuCheckboxItem",
+        "ContextMenuContent",
+        "ContextMenuContentProps",
+        "ContextMenuGroup",
+        "ContextMenuItem",
+        "ContextMenuItemDescription",
+        "ContextMenuLabel",
+        "ContextMenuRadioGroup",
+        "ContextMenuRadioItem",
+        "ContextMenuSeparator",
+        "ContextMenuShortcut",
+        "ContextMenuSub",
+        "ContextMenuSubContent",
+        "ContextMenuSubTrigger",
+        "ContextMenuTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/context-menu"
+      ],
+      "slots": [],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "currency-input.tsx",
+      "exports": [
+        "CurrencyInput",
+        "CurrencyInputProps"
+      ],
+      "imports": [
+        "react",
+        "#components/input-group",
+        "#components/input"
+      ],
+      "slots": [
+        "currency-input"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/input-group",
+        "#components/input"
+      ]
+    },
+    {
+      "file": "data-table.tsx",
+      "exports": [
+        "ColumnDef",
+        "ColumnFiltersState",
+        "DataTable",
+        "DataTableFilter",
+        "DataTableProps",
+        "DataTableState",
+        "DateRangeValue",
+        "FilterSpec",
+        "PaginationState",
+        "RangeValue",
+        "RowSelectionState",
+        "SortingState",
+        "Table",
+        "TableUrlConfig",
+        "UseDataTableOptions",
+        "VisibilityState",
+        "booleanFilter",
+        "dateRangeFilter",
+        "facetFilter",
+        "isFilterActive",
+        "numericRangeFilter",
+        "readTableUrl",
+        "useDataTable",
+        "useDataTableUrlState",
+        "validCalendarDate",
+        "writeTableUrl"
+      ],
+      "imports": [
+        "react",
+        "@tanstack/react-table",
+        "@base-ui/react/collapsible",
+        "lucide-react",
+        "#components/button",
+        "#components/input",
+        "#components/checkbox",
+        "#components/select",
+        "#components/popover",
+        "#components/alert",
+        "#components/spinner",
+        "#lib/data-table-filters",
+        "#lib/data-table-model",
+        "#components/pagination",
+        "#lib/utils"
+      ],
+      "slots": [
+        "data-table"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label",
+        "aria-sort"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/input",
+        "#components/checkbox",
+        "#components/select",
+        "#components/popover",
+        "#components/alert",
+        "#components/spinner",
+        "#components/pagination"
+      ]
+    },
+    {
+      "file": "description-list.tsx",
+      "exports": [
+        "DescriptionList",
+        "DescriptionListDescription",
+        "DescriptionListDetail",
+        "DescriptionListItem",
+        "DescriptionListProps",
+        "DescriptionListTerm",
+        "DescriptionListValue"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "description-list",
+        "description-list-description",
+        "description-list-detail",
+        "description-list-item",
+        "description-list-term",
+        "description-list-value"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "dialog.tsx",
+      "exports": [
+        "Dialog",
+        "DialogBody",
+        "DialogClose",
+        "DialogContent",
+        "DialogContentProps",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogMedia",
+        "DialogStep",
+        "DialogSteps",
+        "DialogStepsProps",
+        "DialogTitle",
+        "DialogTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/dialog",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#lib/utils"
+      ],
+      "slots": [
+        "dialog-backdrop",
+        "dialog-body",
+        "dialog-content",
+        "dialog-description",
+        "dialog-footer",
+        "dialog-header",
+        "dialog-media",
+        "dialog-steps",
+        "dialog-title"
+      ],
+      "aria": [
+        "aria-current",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button"
+      ]
+    },
+    {
+      "file": "drawer.tsx",
+      "exports": [
+        "Drawer",
+        "DrawerBody",
+        "DrawerClose",
+        "DrawerContent",
+        "DrawerContentProps",
+        "DrawerDescription",
+        "DrawerFooter",
+        "DrawerHandle",
+        "DrawerHeader",
+        "DrawerMedia",
+        "DrawerProps",
+        "DrawerTitle",
+        "DrawerTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/drawer",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/dialog",
+        "#lib/utils"
+      ],
+      "slots": [
+        "drawer-backdrop",
+        "drawer-body",
+        "drawer-content",
+        "drawer-description",
+        "drawer-handle",
+        "drawer-title"
+      ],
+      "aria": [
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/dialog"
+      ]
+    },
+    {
+      "file": "dropdown-menu.tsx",
+      "exports": [
+        "DropdownMenu",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuContent",
+        "DropdownMenuContentProps",
+        "DropdownMenuGroup",
+        "DropdownMenuItem",
+        "DropdownMenuItemDescription",
+        "DropdownMenuLabel",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuRadioItem",
+        "DropdownMenuSeparator",
+        "DropdownMenuShortcut",
+        "DropdownMenuSub",
+        "DropdownMenuSubContent",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/menu",
+        "@base-ui/react/use-render"
+      ],
+      "slots": [],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "empty.tsx",
+      "exports": [
+        "Empty",
+        "EmptyContent",
+        "EmptyDescription",
+        "EmptyHeader",
+        "EmptyMedia",
+        "EmptyProps",
+        "EmptyState",
+        "EmptyStateProps",
+        "EmptyTitle"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "empty",
+        "empty-content",
+        "empty-description",
+        "empty-header",
+        "empty-media",
+        "empty-title"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "error-state.tsx",
+      "exports": [
+        "ErrorState",
+        "ErrorStateProps"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/empty",
+        "#components/button",
+        "#components/spinner",
+        "#lib/utils"
+      ],
+      "slots": [
+        "error-state"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/empty",
+        "#components/button",
+        "#components/spinner"
+      ]
+    },
+    {
+      "file": "field.tsx",
+      "exports": [
+        "Field",
+        "FieldContent",
+        "FieldDescription",
+        "FieldError",
+        "FieldGroup",
+        "FieldHeader",
+        "FieldLabel",
+        "FieldLegend",
+        "FieldSeparator",
+        "FieldSet",
+        "FieldTitle"
+      ],
+      "imports": [
+        "react",
+        "class-variance-authority",
+        "#components/label",
+        "#components/separator",
+        "#lib/utils"
+      ],
+      "slots": [
+        "field",
+        "field-content",
+        "field-description",
+        "field-error",
+        "field-group",
+        "field-label",
+        "field-legend",
+        "field-separator",
+        "field-separator-content",
+        "field-set"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/label",
+        "#components/separator"
+      ]
+    },
+    {
+      "file": "file-upload.tsx",
+      "exports": [
+        "FileRejection",
+        "FileRejectionCode",
+        "FileUpload",
+        "FileUploadLabels",
+        "FileUploadProps",
+        "UploadEntry",
+        "UploadHandler",
+        "UploadPolicy",
+        "UploadStatus",
+        "UseFileUploadOptions",
+        "formatFileSize",
+        "useFileUpload",
+        "validateUploadFiles"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/button",
+        "#components/badge",
+        "#components/field",
+        "#lib/utils",
+        "#lib/file-upload-model"
+      ],
+      "slots": [
+        "file-upload"
+      ],
+      "aria": [
+        "aria-atomic",
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-valuemax",
+        "aria-valuemin",
+        "aria-valuenow",
+        "aria-valuetext"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/button",
+        "#components/badge",
+        "#components/field"
+      ]
+    },
+    {
+      "file": "hover-card.tsx",
+      "exports": [
+        "HoverCard",
+        "HoverCardBody",
+        "HoverCardClose",
+        "HoverCardContent",
+        "HoverCardContentProps",
+        "HoverCardDescription",
+        "HoverCardFooter",
+        "HoverCardTitle",
+        "HoverCardTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/popover",
+        "#components/popover",
+        "#lib/utils"
+      ],
+      "slots": [
+        "hover-card-body",
+        "hover-card-content",
+        "hover-card-footer",
+        "hover-card-trigger"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/popover"
+      ]
+    },
+    {
+      "file": "input-group.tsx",
+      "exports": [
+        "InputField",
+        "InputFieldProps",
+        "InputGroup",
+        "InputGroupAddon",
+        "InputGroupButton",
+        "InputGroupInput",
+        "InputGroupProps",
+        "InputGroupSelect",
+        "InputGroupSelectOption",
+        "InputGroupSelectProps",
+        "InputGroupText",
+        "InputGroupTextarea"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/combobox",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/input",
+        "#components/button",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "input-group",
+        "input-group-addon",
+        "input-group-button",
+        "input-group-input",
+        "input-group-select-content",
+        "input-group-text",
+        "input-group-textarea"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-pressed",
+        "aria-readonly",
+        "aria-required"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/input",
+        "#components/button",
+        "#components/field"
+      ]
+    },
+    {
+      "file": "input-otp.tsx",
+      "exports": [
+        "InputOTP",
+        "InputOTPProps",
+        "normalizeOTP"
+      ],
+      "imports": [
+        "react",
+        "#components/input",
+        "#components/field",
+        "#components/spinner",
+        "#lib/utils"
+      ],
+      "slots": [
+        "input-otp"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/input",
+        "#components/field",
+        "#components/spinner"
+      ]
+    },
+    {
+      "file": "input.tsx",
+      "exports": [
+        "Input",
+        "InputControlSize",
+        "InputProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/input",
+        "#lib/utils"
+      ],
+      "slots": [
+        "input"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "label"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "loading.tsx",
+      "exports": [
+        "Loading",
+        "LoadingIdentityState",
+        "LoadingProps"
+      ],
+      "imports": [
+        "react",
+        "#lib/loading-logo",
+        "#lib/utils"
+      ],
+      "slots": [
+        "loading"
+      ],
+      "aria": [
+        "aria-atomic",
+        "aria-live"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "menubar.tsx",
+      "exports": [
+        "Menubar",
+        "MenubarCheckboxItem",
+        "MenubarContent",
+        "MenubarContentProps",
+        "MenubarGroup",
+        "MenubarItem",
+        "MenubarItemDescription",
+        "MenubarLabel",
+        "MenubarMenu",
+        "MenubarRadioGroup",
+        "MenubarRadioItem",
+        "MenubarSeparator",
+        "MenubarShortcut",
+        "MenubarSub",
+        "MenubarSubContent",
+        "MenubarSubTrigger",
+        "MenubarTrigger"
+      ],
+      "imports": [
+        "@base-ui/react/menubar",
+        "@base-ui/react/menu",
+        "react",
+        "#components/dropdown-menu",
+        "#components/button",
+        "#lib/utils"
+      ],
+      "slots": [
+        "menubar"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/dropdown-menu",
+        "#components/button"
+      ]
+    },
+    {
+      "file": "metric-card.tsx",
+      "exports": [
+        "MetricCard",
+        "MetricCardProps",
+        "MetricComparison",
+        "compareMetric"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/card",
+        "#components/chart",
+        "#components/badge",
+        "#components/spinner",
+        "#components/empty",
+        "#components/error-state",
+        "#lib/metric-model",
+        "#lib/utils"
+      ],
+      "slots": [
+        "metric-card"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label",
+        "aria-labelledby"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/card",
+        "#components/chart",
+        "#components/badge",
+        "#components/spinner",
+        "#components/empty",
+        "#components/error-state"
+      ]
+    },
+    {
+      "file": "multi-select.tsx",
+      "exports": [
+        "MultiSelect",
+        "MultiSelectProps",
+        "normalizeSelections"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/combobox",
+        "lucide-react",
+        "#components/combobox",
+        "#components/field",
+        "#components/input-group",
+        "#components/button",
+        "#components/badge",
+        "#components/dropdown-menu",
+        "#components/aqualy-ui-portal",
+        "#components/aqualy-ui-scope",
+        "#lib/multi-select-model",
+        "#lib/utils"
+      ],
+      "slots": [
+        "multi-select-content"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-live",
+        "aria-required"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/combobox",
+        "#components/field",
+        "#components/input-group",
+        "#components/button",
+        "#components/badge",
+        "#components/dropdown-menu",
+        "#components/aqualy-ui-portal",
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "navigation-menu.tsx",
+      "exports": [
+        "NavigationMenu",
+        "NavigationMenuContent",
+        "NavigationMenuItem",
+        "NavigationMenuLink",
+        "NavigationMenuList",
+        "NavigationMenuTrigger",
+        "NavigationMenuViewport"
+      ],
+      "imports": [
+        "@base-ui/react/navigation-menu",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#lib/utils"
+      ],
+      "slots": [
+        "navigation-menu",
+        "navigation-menu-content",
+        "navigation-menu-popup"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal"
+      ]
+    },
+    {
+      "file": "number-input.tsx",
+      "exports": [
+        "NumberInput",
+        "NumberInputProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/number-field",
+        "lucide-react",
+        "#components/input-group",
+        "#components/field",
+        "#components/input",
+        "#lib/utils"
+      ],
+      "slots": [],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-labelledby",
+        "aria-required"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/input-group",
+        "#components/field",
+        "#components/input"
+      ]
+    },
+    {
+      "file": "pagination.tsx",
+      "exports": [
+        "Pagination",
+        "PaginationProps",
+        "paginationItems",
+        "parsePageJump"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/button",
+        "#components/input",
+        "#components/aqualy-ui-scope",
+        "#lib/pagination-model",
+        "#lib/utils"
+      ],
+      "slots": [
+        "pagination"
+      ],
+      "aria": [
+        "aria-current",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/button",
+        "#components/input",
+        "#components/aqualy-ui-scope"
+      ]
+    },
+    {
+      "file": "phone-input.tsx",
+      "exports": [
+        "PhoneInput",
+        "PhoneInputProps",
+        "PhoneInputValue",
+        "normalizePhoneInput"
+      ],
+      "imports": [
+        "react",
+        "libphonenumber-js/core",
+        "libphonenumber-js/metadata.max",
+        "libphonenumber-js/examples.mobile.json",
+        "#components/input",
+        "#components/input",
+        "#components/input-group",
+        "#lib/utils"
+      ],
+      "slots": [
+        "phone-input"
+      ],
+      "aria": [
+        "aria-invalid"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/input",
+        "#components/input",
+        "#components/input-group"
+      ]
+    },
+    {
+      "file": "popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverClose",
+        "PopoverContent",
+        "PopoverDescription",
+        "PopoverFooter",
+        "PopoverHeader",
+        "PopoverTitle",
+        "PopoverTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/popover",
+        "#components/aqualy-ui-portal",
+        "#lib/utils"
+      ],
+      "slots": [
+        "popover",
+        "popover-content",
+        "popover-description",
+        "popover-footer",
+        "popover-header",
+        "popover-title",
+        "popover-trigger"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal"
+      ]
+    },
+    {
+      "file": "progress.tsx",
+      "exports": [
+        "CapacityProgress",
+        "CapacityProgressProps",
+        "CapacitySeat",
+        "CapacitySeatState",
+        "Progress",
+        "ProgressProps",
+        "StepIndicator",
+        "StepIndicatorProps",
+        "StepItem",
+        "capacitySummary"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/direction-provider",
+        "@base-ui/react/progress",
+        "lucide-react",
+        "#components/hover-card",
+        "#components/button",
+        "#components/badge",
+        "#lib/utils",
+        "#lib/progress-model"
+      ],
+      "slots": [
+        "capacity-progress",
+        "progress",
+        "step-indicator"
+      ],
+      "aria": [
+        "aria-current",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/hover-card",
+        "#components/button",
+        "#components/badge"
+      ]
+    },
+    {
+      "file": "radio-group.tsx",
+      "exports": [
+        "RadioGroup",
+        "RadioGroupField",
+        "RadioGroupFieldProps",
+        "RadioGroupItem",
+        "RadioGroupOption",
+        "RadioOption"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/radio",
+        "@base-ui/react/radio-group",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "radio",
+        "radio-group"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-labelledby"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/field"
+      ]
+    },
+    {
+      "file": "resizable.tsx",
+      "exports": [
+        "ResizablePanel",
+        "ResizablePanels",
+        "ResizablePanelsProps",
+        "clampSplit",
+        "splitFromKey",
+        "splitFromPointer"
+      ],
+      "imports": [
+        "react",
+        "#components/aqualy-ui-scope",
+        "#components/radio-group",
+        "#lib/utils",
+        "#lib/resizable-model"
+      ],
+      "slots": [
+        "resizable"
+      ],
+      "aria": [
+        "aria-controls",
+        "aria-disabled",
+        "aria-hidden",
+        "aria-label",
+        "aria-orientation",
+        "aria-valuemax",
+        "aria-valuemin",
+        "aria-valuenow",
+        "aria-valuetext"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/aqualy-ui-scope",
+        "#components/radio-group"
+      ]
+    },
+    {
+      "file": "scroll-area.tsx",
+      "exports": [
+        "ScrollArea",
+        "ScrollAreaProps",
+        "scrollAreaPosition",
+        "scrollAreaToStart"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "scroll-area"
+      ],
+      "aria": [
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "search.tsx",
+      "exports": [
+        "SearchField",
+        "SearchFieldProps"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "#components/field",
+        "#components/input-group",
+        "#components/spinner",
+        "#components/input"
+      ],
+      "slots": [
+        "search-field"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/field",
+        "#components/input-group",
+        "#components/spinner",
+        "#components/input"
+      ]
+    },
+    {
+      "file": "select.tsx",
+      "exports": [
+        "Select",
+        "SelectContent",
+        "SelectField",
+        "SelectFieldProps",
+        "SelectGroup",
+        "SelectItem",
+        "SelectLabel",
+        "SelectOption",
+        "SelectOptionGroup",
+        "SelectScrollDownButton",
+        "SelectScrollUpButton",
+        "SelectSeparator",
+        "SelectTrigger",
+        "SelectValue"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/select",
+        "#components/aqualy-ui-portal",
+        "#lib/utils",
+        "#components/field",
+        "#components/input-group",
+        "#components/input",
+        "lucide-react"
+      ],
+      "slots": [
+        "select-content",
+        "select-field",
+        "select-group",
+        "select-item",
+        "select-label",
+        "select-scroll-down-button",
+        "select-scroll-up-button",
+        "select-separator",
+        "select-trigger",
+        "select-value"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid",
+        "aria-label",
+        "aria-required"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/field",
+        "#components/input-group",
+        "#components/input"
+      ]
+    },
+    {
+      "file": "separator.tsx",
+      "exports": [
+        "LabeledSeparator",
+        "Separator"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/separator",
+        "#lib/utils"
+      ],
+      "slots": [
+        "labeled-separator",
+        "separator"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "sheet.tsx",
+      "exports": [
+        "Sheet",
+        "SheetBody",
+        "SheetClose",
+        "SheetContent",
+        "SheetContentProps",
+        "SheetDescription",
+        "SheetFooter",
+        "SheetHeader",
+        "SheetMedia",
+        "SheetTitle",
+        "SheetTrigger"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/dialog",
+        "lucide-react",
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/dialog",
+        "#lib/utils"
+      ],
+      "slots": [
+        "sheet-backdrop",
+        "sheet-content"
+      ],
+      "aria": [
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal",
+        "#components/button",
+        "#components/dialog"
+      ]
+    },
+    {
+      "file": "sidebar.tsx",
+      "exports": [
+        "Sidebar",
+        "SidebarCollapseMode",
+        "SidebarContent",
+        "SidebarDisclosure",
+        "SidebarDisclosureProps",
+        "SidebarFooter",
+        "SidebarGroup",
+        "SidebarGroupLabel",
+        "SidebarHeader",
+        "SidebarInset",
+        "SidebarMenu",
+        "SidebarMenuButton",
+        "SidebarMenuButtonProps",
+        "SidebarMenuItem",
+        "SidebarProps",
+        "SidebarProvider",
+        "SidebarProviderProps",
+        "SidebarTrigger",
+        "useSidebar"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/collapsible",
+        "#components/tooltip",
+        "lucide-react",
+        "#components/button",
+        "#components/scroll-area",
+        "#components/sheet",
+        "#lib/utils"
+      ],
+      "slots": [
+        "sidebar",
+        "sidebar-desktop",
+        "sidebar-disclosure",
+        "sidebar-disclosure-panel",
+        "sidebar-footer",
+        "sidebar-group",
+        "sidebar-group-label",
+        "sidebar-header",
+        "sidebar-inset",
+        "sidebar-menu",
+        "sidebar-menu-button",
+        "sidebar-menu-item",
+        "sidebar-provider",
+        "sidebar-tooltip",
+        "sidebar-trigger"
+      ],
+      "aria": [
+        "aria-controls",
+        "aria-current",
+        "aria-expanded",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/tooltip",
+        "#components/button",
+        "#components/scroll-area",
+        "#components/sheet"
+      ]
+    },
+    {
+      "file": "skeleton.tsx",
+      "exports": [
+        "Skeleton",
+        "SkeletonProps",
+        "SkeletonRegion"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "skeleton",
+        "skeleton-region"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "slider.tsx",
+      "exports": [
+        "Slider",
+        "SliderField",
+        "SliderFieldProps",
+        "SliderProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/field",
+        "@base-ui/react/slider",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "slider",
+        "slider-control",
+        "slider-field"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-invalid",
+        "aria-labelledby"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/field"
+      ]
+    },
+    {
+      "file": "spinner.tsx",
+      "exports": [
+        "Spinner",
+        "SpinnerProps"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils",
+        "lucide-react"
+      ],
+      "slots": [
+        "spinner"
+      ],
+      "aria": [
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "switch.tsx",
+      "exports": [
+        "Switch",
+        "SwitchField",
+        "SwitchFieldProps",
+        "SwitchProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/switch",
+        "#components/field",
+        "#components/spinner",
+        "#lib/utils"
+      ],
+      "slots": [
+        "switch",
+        "switch-field",
+        "switch-thumb"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/field",
+        "#components/spinner"
+      ]
+    },
+    {
+      "file": "tabs.tsx",
+      "exports": [
+        "Tabs",
+        "TabsContent",
+        "TabsList",
+        "TabsListProps",
+        "TabsTrigger"
+      ],
+      "imports": [
+        "@base-ui/react/tabs",
+        "#lib/utils"
+      ],
+      "slots": [
+        "tabs",
+        "tabs-content",
+        "tabs-list",
+        "tabs-trigger"
+      ],
+      "aria": [],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": []
+    },
+    {
+      "file": "textarea.tsx",
+      "exports": [
+        "Textarea",
+        "TextareaField",
+        "TextareaFieldProps",
+        "TextareaProps"
+      ],
+      "imports": [
+        "react",
+        "#components/input-group",
+        "#components/field",
+        "#lib/utils"
+      ],
+      "slots": [
+        "textarea"
+      ],
+      "aria": [
+        "aria-describedby",
+        "aria-hidden",
+        "aria-invalid"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": [
+        "#components/input-group",
+        "#components/field"
+      ]
+    },
+    {
+      "file": "timeline.tsx",
+      "exports": [
+        "Timeline",
+        "TimelineContent",
+        "TimelineDescription",
+        "TimelineIndicator",
+        "TimelineItem",
+        "TimelineTime",
+        "TimelineTitle"
+      ],
+      "imports": [
+        "react",
+        "#lib/utils"
+      ],
+      "slots": [
+        "timeline",
+        "timeline-content",
+        "timeline-description",
+        "timeline-indicator",
+        "timeline-item",
+        "timeline-time",
+        "timeline-title"
+      ],
+      "aria": [
+        "aria-hidden"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": false,
+      "sharedComponents": []
+    },
+    {
+      "file": "toast.tsx",
+      "exports": [
+        "ToastData",
+        "ToastOptions",
+        "ToastPreview",
+        "ToastProvider",
+        "ToastProviderProps",
+        "ToastUpdateOptions",
+        "ToastVariant",
+        "useToast"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/toast",
+        "lucide-react",
+        "#components/button",
+        "#components/spinner",
+        "#components/aqualy-ui-portal",
+        "#lib/utils"
+      ],
+      "slots": [
+        "toast",
+        "toast-preview",
+        "toast-viewport"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-hidden",
+        "aria-label"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/spinner",
+        "#components/aqualy-ui-portal"
+      ]
+    },
+    {
+      "file": "toggle-group.tsx",
+      "exports": [
+        "SegmentedControl",
+        "SegmentedControlItem",
+        "ToggleGroup",
+        "ToggleGroupItem",
+        "ToggleLayout"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/toggle-group",
+        "@base-ui/react/radio-group",
+        "@base-ui/react/radio",
+        "#components/button",
+        "#components/toggle",
+        "#lib/utils"
+      ],
+      "slots": [
+        "segmented-control",
+        "segmented-control-item",
+        "toggle-group"
+      ],
+      "aria": [
+        "aria-busy",
+        "aria-orientation"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button",
+        "#components/toggle"
+      ]
+    },
+    {
+      "file": "toggle.tsx",
+      "exports": [
+        "Toggle",
+        "ToggleProps",
+        "ToggleSize",
+        "ToggleVariant"
+      ],
+      "imports": [
+        "@base-ui/react/toggle",
+        "#components/button",
+        "#lib/utils"
+      ],
+      "slots": [
+        "toggle"
+      ],
+      "aria": [
+        "aria-busy"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/button"
+      ]
+    },
+    {
+      "file": "tooltip.tsx",
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipContentProps",
+        "TooltipProps",
+        "TooltipProvider",
+        "TooltipTrigger",
+        "TooltipTriggerProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/tooltip",
+        "#components/aqualy-ui-portal",
+        "@base-ui/react/use-render",
+        "#lib/utils"
+      ],
+      "slots": [
+        "tooltip-content",
+        "tooltip-trigger"
+      ],
+      "aria": [
+        "aria-describedby"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": false,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/aqualy-ui-portal"
+      ]
+    },
+    {
+      "file": "tree.tsx",
+      "exports": [
+        "Tree",
+        "TreeNode",
+        "TreeProps"
+      ],
+      "imports": [
+        "react",
+        "@base-ui/react/collapsible",
+        "lucide-react",
+        "#components/empty",
+        "#components/aqualy-ui-scope",
+        "#lib/utils"
+      ],
+      "slots": [
+        "tree",
+        "tree-container",
+        "tree-group",
+        "tree-item",
+        "tree-row"
+      ],
+      "aria": [
+        "aria-disabled",
+        "aria-expanded",
+        "aria-hidden",
+        "aria-label",
+        "aria-level",
+        "aria-posinset",
+        "aria-selected",
+        "aria-setsize"
+      ],
+      "portalScoped": true,
+      "keyboardHandler": true,
+      "nativePrimitive": true,
+      "sharedComponents": [
+        "#components/empty",
+        "#components/aqualy-ui-scope"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+@layer components {
+ .aq-resizable { width:100%; min-width:0; }
+ .aq-resize-grid { display:grid; height:340px; border:1px solid var(--border); border-radius:var(--radius-card); background:var(--surface); min-width:0; overflow:hidden; }
+ .aq-resizable[data-orientation="vertical"] .aq-resize-grid { height:420px; }
+ .aq-resize-panel { min-width:0; min-height:0; overflow:auto; scrollbar-width:thin; scrollbar-color:var(--control) transparent; }
+ .aq-resize-handle { position:relative; cursor:col-resize; background:var(--canvas); border-inline:1px solid var(--border); outline:none; display:grid; place-items:center; touch-action:none; }
+ .aq-resize-handle>span { width:2px; height:20px; border-radius:var(--radius-pill); background:var(--control); pointer-events:none; }
+ .aq-resize-handle::after { content:""; position:absolute; inset:0 -5px; }
+ .aq-resize-handle:focus-visible { background:var(--accent-soft); outline:var(--focus-width) solid var(--ring); outline-offset:-2px; }
+ .aq-resize-handle:hover { background:var(--subtle); }
+ .aq-resize-handle[aria-disabled="true"] { cursor:not-allowed; opacity:.5; }
+ .aq-resizable[data-resizing] { user-select:none; }
+ .aq-resizable[data-orientation="vertical"] .aq-resize-handle { cursor:row-resize; border-inline:0; border-block:1px solid var(--border); }
+ .aq-resizable[data-orientation="vertical"] .aq-resize-handle>span { width:20px; height:2px; }
+ .aq-resizable[data-orientation="vertical"] .aq-resize-handle::after { inset:-5px 0; }
+ .aq-resize-mobile { display:none; margin-block-end:12px; }
+ .aq-scroll-area { contain:inline-size; height:260px; overflow:auto; width:100%; min-width:0; border:1px solid var(--border); border-radius:var(--radius-input); background:var(--surface); scrollbar-width:thin; scrollbar-color:var(--control) transparent; }
+ .aq-scroll-area[data-orientation="vertical"] { overflow-x:hidden; }
+ .aq-scroll-area[data-orientation="horizontal"] { overflow-y:hidden; }
+ .aq-scroll-area[data-overscroll="contain"] { overscroll-behavior:contain; }
+ .aq-scroll-area:focus-visible { outline:var(--focus-width) solid var(--ring); outline-offset:3px; }
+ .aq-scroll-area::-webkit-scrollbar { width:8px; height:8px; }
+ .aq-scroll-area::-webkit-scrollbar-thumb { background:var(--control); border-radius:var(--radius-pill); }
+ .aq-scroll-area[data-scrollbar="hidden"] { scrollbar-width:none; }
+ .aq-scroll-area[data-scrollbar="hidden"]::-webkit-scrollbar { display:none; }
+ .aq-select-trigger[data-variant="secondary"],.aq-select-searchable-group[data-variant="secondary"] { background:var(--subtle); box-shadow:none; }
+ .aq-select-trigger[data-readonly],.aq-select-searchable-group[data-readonly] { background:var(--canvas); cursor:default; }
+ .aq-select-searchable-control[data-readonly] { cursor:default; }
+ .aq-select-copy { display:grid; gap:3px; }
+ .aq-select-copy strong { font-size:12px; font-weight:400; }
+ .aq-select-copy small { font-size:10px; color:var(--muted); line-height:1.6; }
+ .aq-select-searchable-group .aq-select-searchable-control { flex:1; width:100%; min-width:0; max-width:none; height:100%; min-height:0; margin-inline-start:0; padding-inline:0; border:0; border-radius:0; }
+ .aq-select-searchable-group .aq-select-searchable-control:dir(rtl) { border-radius:0; }
+ .aq-labeled-separator { display:flex; align-items:center; gap:12px; width:100%; min-width:0; }
+ .aq-labeled-separator>.aq-separator { width:auto; flex:1; }
+ .aq-labeled-separator>:is(span,h2,h3,h4) { font-size:11px; font-weight:500; color:var(--muted); min-width:0; text-align:center; }
+}
+@media(max-width:700px) {
+ .aq-resize-mobile { display:block; }
+ .aq-resizable[data-orientation="horizontal"] .aq-resize-grid { display:block; height:320px; }
+ .aq-resizable[data-orientation="horizontal"] .aq-resize-handle { display:none; }
+ .aq-resizable[data-orientation="horizontal"] .aq-resize-panel { height:100%; }
+ .aq-resizable[data-orientation="horizontal"][data-mobile-view="start"] [data-panel="end"],.aq-resizable[data-orientation="horizontal"][data-mobile-view="end"] [data-panel="start"] { display:none; }
+ .aq-select-copy small { font-size:11px; }
+ .aq-labeled-separator { gap:8px; }
+}
+
+/* Catalog C menu rules are unlayered; keep this live-region fix at the same cascade level. */
+.aq-combobox-empty:empty { padding:0; }
+/* Mobile compound-prefix type rules are also unlayered; standalone Select inherits its full control size. */
+.aq-select-searchable-group .aq-select-searchable-control { font:inherit; }

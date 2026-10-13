@@ -1,0 +1,11 @@
+{
+  "style": "radix-nova",
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "purpose": "Recorded configuration baseline only; product integration is not performed by SDK tests"
+}

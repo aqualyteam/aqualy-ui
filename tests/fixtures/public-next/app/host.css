@@ -1,0 +1,12 @@
+body { margin:0; background:#f8fafb; }
+.consumer-scope { min-height:100vh; padding:24px; }
+main { max-width:1080px; margin-inline:auto; }
+h1 { margin:0 0 12px; }
+.panel-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.panel { border:1px solid var(--border); border-radius:var(--radius-card); background:var(--surface); padding:20px; min-width:0; }
+.row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-block:16px; }
+section>h2 { font-size:18px; margin-block:0 12px; }
+section>p { font-size:12px; color:var(--muted); }
+.loading-demo { min-height:240px; display:grid; place-items:center; background:var(--canvas); border-radius:var(--radius-input); }
+.consumer-copy { font-size:12px; color:var(--muted); line-height:1.6; }
+@media(max-width:700px) { .consumer-scope{padding:12px}.panel-grid{grid-template-columns:minmax(0,1fr)}.panel{padding:16px} }

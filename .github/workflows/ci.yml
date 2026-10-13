@@ -1,0 +1,55 @@
+name: MIT SDK validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+concurrency:
+  group: sdk-validation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      AQUALY_BROWSER_CHANNEL: chrome
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@9fd676a19091d4595eefd76e4bd31c97133911f1
+        with:
+          version: 10.24.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.18.0
+      - name: Runner toolchain
+        run: |
+          node --version
+          pnpm --version
+          google-chrome --version
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm verify:public
+      - run: pnpm test
+      - run: pnpm typecheck
+      - run: pnpm verify:release
+      - name: External tarball consumer and browser matrix
+        run: pnpm test:consumer | tee /tmp/aqualy-ui-consumer-ci.log
+      - name: Collect synthetic validation artifacts
+        if: always()
+        run: |
+          mkdir -p test-results/consumer
+          if [ -f /tmp/aqualy-ui-consumer-ci.log ]; then
+            cp /tmp/aqualy-ui-consumer-ci.log test-results/consumer/consumer-ci.log
+          fi
+          for consumer_artifacts in /tmp/aqualy-c0-consumer-*/artifacts; do
+            if [ -d "$consumer_artifacts" ]; then
+              cp -R "$consumer_artifacts" "test-results/consumer/$(basename "$(dirname "$consumer_artifacts")")"
+            fi
+          done
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: public-sdk-validation
+          path: test-results/consumer
+          retention-days: 14
+          if-no-files-found: error
