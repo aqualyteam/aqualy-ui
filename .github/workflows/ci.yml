@@ -37,7 +37,9 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm verify:release
       - name: Anonymous npm Next consumer and browser matrix
-        run: node scripts/verify-c0-consumer.mjs --registry | tee /tmp/aqualy-ui-consumer-ci.log
+        run: |
+          set -o pipefail
+          node scripts/verify-c0-consumer.mjs --registry | tee /tmp/aqualy-ui-consumer-ci.log
       - name: Collect synthetic validation artifacts
         if: always()
         run: |
