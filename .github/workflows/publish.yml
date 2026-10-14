@@ -35,9 +35,11 @@ jobs:
       AQUALY_PREPARATION_RUN: ${{ inputs.preparation_run }}
       AQUALY_RELEASE_SOURCE: ${{ inputs.source_sha }}
       AQUALY_RELEASE_SHA256: ${{ inputs.tarball_sha256 }}
-      AQUALY_ARTIFACT_DIRECTORY: ${{ runner.temp }}/approved-candidate
-      NPM_CONFIG_USERCONFIG: ${{ runner.temp }}/anonymous.npmrc
     steps:
+      - name: Initialize isolated artifact and npm paths
+        run: |
+          printf 'AQUALY_ARTIFACT_DIRECTORY=%s/approved-candidate\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+          printf 'NPM_CONFIG_USERCONFIG=%s/anonymous.npmrc\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; node24
         with:
           persist-credentials: false

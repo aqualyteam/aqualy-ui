@@ -34,7 +34,7 @@
     },
     {
       "path": ".github/workflows/publish.yml",
-      "sha256": "f9ac249c4fa6eff3c6ddab6d3c48d00bcaa972aa84098231d106bfc01bfef59d"
+      "sha256": "1ae17ae8e854780c612f04fd060e7ccb0984cc63db90755aa1ebbc5f2e3a5467"
     },
     {
       "path": ".gitignore",
@@ -578,7 +578,7 @@
     },
     {
       "path": "scripts/prepare-release.mjs",
-      "sha256": "31715e764ebfc51aa1426199c7fc233662d14539df2fae3ccd314e6c2c24790f"
+      "sha256": "6aa2ffd3813758ee7f930b22742cae10bde2719d010fad0590b5c10757406482"
     },
     {
       "path": "scripts/publish-release.mjs",
@@ -658,7 +658,7 @@
     },
     {
       "path": "tests/release/preparation.test.mjs",
-      "sha256": "9e2a8ea0261c7653151caa4562c269538906d98d1d18adf3bf3ec2097dc5c1a7"
+      "sha256": "42c931c0488f3e85940b7b04c445613df0a9ff4a82007214790a534e9ed446a3"
     }
   ]
 }

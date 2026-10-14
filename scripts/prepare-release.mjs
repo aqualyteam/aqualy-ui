@@ -12,6 +12,7 @@ try { await access(output); throw new Error('Output already exists; no overwrite
 assertToolchain();
 assert.equal(git('status', '--porcelain'), '', 'Clean reviewed source required');
 const sourceCommit = git('rev-parse', 'HEAD');
+const sourceManifestSha256 = digest(await readFile(resolve(root, 'public-source-manifest.json')));
 if (process.env.AQUALY_EXPECTED_SOURCE) assert.equal(sourceCommit, process.env.AQUALY_EXPECTED_SOURCE);
 if (process.env.GITHUB_ACTIONS === 'true') {
   assert.equal(process.env.GITHUB_REPOSITORY, policy.repository);
@@ -29,13 +30,16 @@ execFileSync(process.execPath, [resolve(root, 'scripts/verify-c0-consumer.mjs'),
 assert.deepEqual(await inspectTarball(tarball), inspected, 'Candidate archive changed during validation');
 const evidence = JSON.parse(await readFile(resolve(output, 'consumer/evidence.json'), 'utf8'));
 assert.equal(evidence.tarballSha256, inspected.sha256);
+assert.equal(git('rev-parse', 'HEAD'), sourceCommit, 'Source commit changed during preparation');
+assert.equal(git('status', '--porcelain'), '', 'Preparation must not mutate reviewed source');
+assert.equal(digest(await readFile(resolve(root, 'public-source-manifest.json'))), sourceManifestSha256, 'Public source manifest changed during preparation');
 for (const name of ['typecheck.log', 'next-build.log', 'install.log']) {
   assert.ok((await readFile(resolve(output, 'consumer', name), 'utf8')).length > 0, name);
 }
 const receipt = {
   format: 1, status: 'validated-unpublished', repository: policy.repository, sourceCommit,
   packageName: policy.packageName, version: policy.version, tag: policy.tag, registry: policy.registry, access: policy.access,
-  sourceManifestSha256: digest(await readFile(resolve(root, 'public-source-manifest.json'))),
+  sourceManifestSha256,
   toolchain: { node: policy.node, pnpm: policy.pnpm, npm: policy.npm },
   tarball: inspected,
   validation: { typesAndNextBuild: 'PASS', exports: evidence.exports, singleReact: evidence.reactDedup, matrices: evidence.results },

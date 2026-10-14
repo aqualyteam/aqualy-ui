@@ -67,6 +67,8 @@ test('OIDC workflow is manual and statically disabled; preparation has no write 
   const prepare = await readFile(resolve(root, base, 'prepare-release.yml'), 'utf8');
   assert.match(publish, /if: \$\{\{ false \}\}/);
   assert.match(publish, /environment: npm-release/);
+  const jobEnvironment = publish.slice(publish.indexOf('    env:'), publish.indexOf('    steps:'));
+  assert.doesNotMatch(jobEnvironment, /runner\./, 'runner context is available in steps, not jobs.env');
   assert.match(publish, /cancel-in-progress: false/);
   assert.doesNotMatch(publish, /pull_request_target|secrets\.|npm publish|--ignore-scripts/);
   assert.match(prepare, /workflow_dispatch:/);
