@@ -1,1 +1,1 @@
-throw new Error("Publication is disabled in DS-EXTRACT-01C0. C1 requires a separately reviewed artifact and explicit publish authorization.");
+throw new Error("Publication is disabled in DS-EXTRACT-01C1 preparation. A separately approved exact artifact and publication gate change are required.");

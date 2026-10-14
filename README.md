@@ -21,3 +21,5 @@ See packages/aqualy-ui/README.md, SUPPORT.md and CONTRIBUTING.md. Code/API/visua
 The default branch is locked after CI acceptance. Maintainers refresh it only from an approved canonical-source snapshot, validate CI and restore the lock. Community patches are reviewed and applied to canonical source first; direct public merges and automatic releases are disabled. Independent MIT forks remain permitted.
 
 Security reports: use [Report a vulnerability](https://github.com/aqualyteam/aqualy-ui/security/advisories/new). The private reporting channel is enabled. No npm package version has been published by this project.
+
+C1 preparation: unpublished `0.1.0-next.0` / `next`. `prepare-release.yml` creates a tested candidate on manual dispatch; `publish.yml` is statically disabled and `config/release-policy.json` has no approved artifact. No npm publication or staged upload is authorized. See [the release runbook](docs/release/PUBLIC_RELEASE_RUNBOOK.zh-CN.md).

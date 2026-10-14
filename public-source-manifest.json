@@ -9,7 +9,11 @@
       "sha256": "7df7f769a33b4ca2f6f7a97c289bd7a04bb29e5f8bcab69bce7500a6b01f5315"
     },
     {
-      "path": ".changeset/first-mit-ui.md",
+      "path": ".changeset/pre.json",
+      "sha256": "25bcad2f6dbf9a7f13ed8d709884a581c7e4637128bf950baa97044245d9a0d9"
+    },
+    {
+      "path": ".changeset/pre/first-mit-ui.md",
       "sha256": "48cd282a8b2982d19cb619876505f2194cd5925620299b692c4fbd328be31805"
     },
     {
@@ -22,7 +26,15 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "5912e6e01a94f43893d100d2121b8fc8f4106e35045d4e0412f006000d505a0c"
+      "sha256": "7c7440daa54a4c4bfb5783a96a9352b587cbefd359d492959a33142dd7542d90"
+    },
+    {
+      "path": ".github/workflows/prepare-release.yml",
+      "sha256": "cbe37a82563934ae2d65922f07cdff461a327fe1ff78ee818ba27921456bd10d"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "sha256": "f9ac249c4fa6eff3c6ddab6d3c48d00bcaa972aa84098231d106bfc01bfef59d"
     },
     {
       "path": ".gitignore",
@@ -53,8 +65,16 @@
       "sha256": "a5cb2fb3fd100aef4268645cb34ea4df7935b65bb1c9be2105fce6253717f38f"
     },
     {
+      "path": "config/release-policy.json",
+      "sha256": "175e4d889df5e3a58e1c887ef27b38842d13a505b5d54ad07a76664653cb8bdb"
+    },
+    {
       "path": "CONTRIBUTING.md",
       "sha256": "7fb0134c228400ae2a0302416d21b046f02788c7018458a3c52f58fcd83bf127"
+    },
+    {
+      "path": "docs/release/PUBLIC_RELEASE_RUNBOOK.zh-CN.md",
+      "sha256": "a0b21e699355f0ac12690299339b53df9d7ce01d5a04b427bea89194f8586c0c"
     },
     {
       "path": "LICENSE",
@@ -62,11 +82,11 @@
     },
     {
       "path": "package.json",
-      "sha256": "3feb5ca184a66845df27342267231dfe017ca0f156a34c530470848e4f5cbe69"
+      "sha256": "37ac45aa8f1acebcf3d769432a090ddbc4cbcb1bc115589008579b64f34f7a40"
     },
     {
       "path": "packages/aqualy-ui/CHANGELOG.md",
-      "sha256": "6bd7a15848f0861d9118d93c5b59dd9e7177c90777bf5a38461fc704fd55ce3f"
+      "sha256": "f0197a1fdce2c4d205c36beea0f8bc38a88eeedf7c685bfc8d405c36c50529e1"
     },
     {
       "path": "packages/aqualy-ui/components.json",
@@ -78,11 +98,11 @@
     },
     {
       "path": "packages/aqualy-ui/package.json",
-      "sha256": "ba010d0432b7ab7bdf7e1948ccd2dbe14ccfd00950161de75da238f4af45c259"
+      "sha256": "839c616327cc820ab01d890e5b1f9dea8cb70380121a93b05e827db275b7925d"
     },
     {
       "path": "packages/aqualy-ui/README.md",
-      "sha256": "35960ff75ff205fae5687abc62cad333d54c544934ca271b81a931f96011f7db"
+      "sha256": "a2483fe6389a7f9359d57e17ec7bd6d7e16baa6e0a82acf8df333aeb1c3386fc"
     },
     {
       "path": "packages/aqualy-ui/src/assets/fonts/FONT-LICENSE.txt",
@@ -546,15 +566,27 @@
     },
     {
       "path": "README.md",
-      "sha256": "d9b837b3dec72439fb39095b0832e29adba49283e389f11598a02e9850fb715b"
+      "sha256": "b2960f65f6e4cefbc5369c283ecb1a8a43439d2a8192d3f429f12f23e56dff4e"
     },
     {
       "path": "scripts/block-publication.mjs",
-      "sha256": "764191d79871770a72053c344a2710064cf9300c45b130e1f1e24e654d2acb7f"
+      "sha256": "9373cb8aefb74d617a9993391fc7a241c3b7da64073662bfa11c91196501f1e7"
     },
     {
       "path": "scripts/build-ui.mjs",
       "sha256": "fab8dcfd64a819aab5b7bfdfceddc3c9d3cb3bcbba5a306f62ba606bbbe85e64"
+    },
+    {
+      "path": "scripts/prepare-release.mjs",
+      "sha256": "31715e764ebfc51aa1426199c7fc233662d14539df2fae3ccd314e6c2c24790f"
+    },
+    {
+      "path": "scripts/publish-release.mjs",
+      "sha256": "42c671ea7a68d7f4dd4465623b4e2be1b6b0e54b3eb14a613a0e17f047ccfe97"
+    },
+    {
+      "path": "scripts/release-artifact.mjs",
+      "sha256": "8f250d80a7755051e9a836bc76cf6f06adade2b8370b0b034727ea1ad1da8fe5"
     },
     {
       "path": "scripts/verify-api-audit.mjs",
@@ -562,15 +594,27 @@
     },
     {
       "path": "scripts/verify-c0-consumer.mjs",
-      "sha256": "6d13cd272334f3d8dd1a7043875dc5c1499198d6fde12ababc2cfa7eb99cb013"
+      "sha256": "3792f86dcd53d7473c8dd84212299d908d1728772779cea9cc3198a521645b53"
+    },
+    {
+      "path": "scripts/verify-candidate.mjs",
+      "sha256": "ca2d9751137b2ca611179e04296885c981861701d2a7a6ffebce651b1d728410"
     },
     {
       "path": "scripts/verify-public-source.mjs",
       "sha256": "4cd64f9695a6106938f04fa5ca7962086c82ea4b39aeb90b286d078f1515d246"
     },
     {
+      "path": "scripts/verify-registry-release.mjs",
+      "sha256": "3d92abf4ee16fabe191d4c6a2e04b1c9ff011e21b1661d2f3e498c12413f9811"
+    },
+    {
+      "path": "scripts/verify-release-run.mjs",
+      "sha256": "eb671275a0b6da217333ecba012cdfede3cb386df58c6d780f62b9df704e8635"
+    },
+    {
       "path": "scripts/verify-release.mjs",
-      "sha256": "52f533c77b07fa1acbda7fa0b4a6ae275d72baf0e57733d9413b7bd02e70eefa"
+      "sha256": "e608412f28506ad9c5207f8ed3ec984f626857da2c0241c3d1dbc5eba4d46f3f"
     },
     {
       "path": "SECURITY.md",
@@ -611,6 +655,10 @@
     {
       "path": "tests/package/dist.test.mjs",
       "sha256": "15437e8cafff39513c63315002887cf44eb4f781704717e1e278d31997c9f2f8"
+    },
+    {
+      "path": "tests/release/preparation.test.mjs",
+      "sha256": "9e2a8ea0261c7653151caa4562c269538906d98d1d18adf3bf3ec2097dc5c1a7"
     }
   ]
 }

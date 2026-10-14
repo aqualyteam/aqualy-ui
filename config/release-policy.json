@@ -1,0 +1,18 @@
+{
+  "format": 1,
+  "packageName": "@aqualy/ui",
+  "version": "0.1.0-next.0",
+  "tag": "next",
+  "registry": "https://registry.npmjs.org/",
+  "access": "public",
+  "repository": "aqualyteam/aqualy-ui",
+  "workflow": "publish.yml",
+  "environment": "npm-release",
+  "bootstrapUser": "anthonychoi",
+  "node": "24.18.0",
+  "pnpm": "10.24.0",
+  "npm": "11.16.0",
+  "publishEnabled": false,
+  "approvedSource": null,
+  "approvedSha256": null
+}

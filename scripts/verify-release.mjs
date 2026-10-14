@@ -3,6 +3,8 @@ import {readFile,readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 const root=fileURLToPath(new URL('../',import.meta.url)),pkg=JSON.parse(await readFile(resolve(root,'packages/aqualy-ui/package.json'),'utf8'));
+const policy=JSON.parse(await readFile(resolve(root,'config/release-policy.json'),'utf8'));
+assert.equal(pkg.version,policy.version);assert.equal(policy.publishEnabled,false);assert.equal(policy.approvedSource,null);assert.equal(policy.approvedSha256,null);
 assert.equal(pkg.name,'@aqualy/ui');assert.equal(pkg.license,'MIT');assert.equal(pkg.private,false);
 assert.deepEqual(pkg.publishConfig,{registry:'https://registry.npmjs.org/',access:'public'});
 assert.equal(Object.keys(pkg.exports).length,66);assert.deepEqual(pkg.peerDependencies,{react:'19.2.1','react-dom':'19.2.1'});

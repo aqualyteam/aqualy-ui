@@ -22,6 +22,8 @@ Static tools/buttonVariants remain server-compatible. Interaction components car
 
 The generated `config/public-api.json` in the source distribution lists all public subpaths and exported symbols. Full declarations ship with each module. Refer to the self-contained consumer and tests for executable composition/keyboard/RTL examples. Browser/runtime support limits are recorded in SUPPORT.md.
 
+Release status: `0.1.0-next.0` is an unpublished candidate. MIT applies to code/tokens/CSS; official Aqualy marks are excluded. Publication and product adoption require independent approval.
+
 ## Public subpaths
 
 - @aqualy/ui/components/accordion
