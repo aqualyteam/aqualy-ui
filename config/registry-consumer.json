@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "packageName": "@aqualy/ui",
+  "version": "0.1.0-next.0",
+  "registry": "https://registry.npmjs.org/",
+  "buildSource": "70e1789568621cbef493cd5319b4556cb5704634",
+  "sha256": "948552994c0dfc74e15653268872a816f2e2821adc40fcaf6687dc6a453bb48c",
+  "integrity": "sha512-t0V/hVGNDPeQbJUSbh5kRbAhn4Qs/6gc+aAV+2ZH8ja7/Mb7GNV3EPQgsFK7UC2e+v3CvqZkUlk3lZ1TDHg58A==",
+  "expectedTags": { "next": "0.1.0-next.0", "latest": "0.1.0-next.0" },
+  "exception": {
+    "id": "C1-FIRST-PACKAGE-LATEST",
+    "acceptedByOwner": true,
+    "reason": "First npm bootstrap automatically created latest; authenticated deletion returned HTTP400. Owner explicitly accepts retaining it for this exact candidate only.",
+    "stableRelease": false,
+    "publicationAuthorization": false
+  }
+}

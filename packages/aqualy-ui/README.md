@@ -1,6 +1,6 @@
 # @aqualy/ui
 
-Unpublished MIT UI distribution. Tested React/React DOM19.2.1, Next16.0.10, Node24.18.0, pnpm10.24.0; ESM/declarations/precompiled scoped CSS and OFL fonts. No root barrel, consumer Tailwind or source transpilation required.
+Published MIT UI candidate @aqualy/ui@0.1.0-next.0. Tested React/React DOM19.2.1, Next16.0.10, Node24.18.0, pnpm10.24.0; ESM/declarations/precompiled scoped CSS and OFL fonts. No root barrel, consumer Tailwind or source transpilation required.
 
 ```tsx
 import "@aqualy/ui/styles.css"
@@ -22,7 +22,7 @@ Static tools/buttonVariants remain server-compatible. Interaction components car
 
 The generated `config/public-api.json` in the source distribution lists all public subpaths and exported symbols. Full declarations ship with each module. Refer to the self-contained consumer and tests for executable composition/keyboard/RTL examples. Browser/runtime support limits are recorded in SUPPORT.md.
 
-Release status: `0.1.0-next.0` is an unpublished candidate. MIT applies to code/tokens/CSS; official Aqualy marks are excluded. Publication and product adoption require independent approval.
+Release status: `0.1.0-next.0` is published as a prerelease candidate. npm attached next and latest to the first package; authenticated latest deletion was rejected and the owner explicitly accepted this exact first-package exception. Install the exact version, rather than a floating tag. The original published archive remains immutable; its preparation README is historical, while these source-distribution docs reflect current status. MIT applies to code/tokens/CSS; official Aqualy marks are excluded. Publication and product adoption require independent approval.
 
 ## Public subpaths
 

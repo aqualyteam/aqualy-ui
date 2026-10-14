@@ -83,8 +83,9 @@ export async function verifyReceipt(path, expectedSource, expectedSha256) {
   return receipt;
 }
 
-export function assertPublishAuthorized(source, sha256) {
-  assert.equal(policy.publishEnabled, true, 'Publication is disabled in C1 preparation; separate publish authorization required');
-  assert.equal(source, policy.approvedSource, 'Approved source commit required');
-  assert.equal(sha256, policy.approvedSha256, 'Approved exact artifact required');
+export function assertPublishAuthorized(source, sha256, mode = 'oidc', authorization = policy) {
+  assert.equal(authorization.publishEnabled, true, 'Publication is disabled; separate exact-artifact authorization required');
+  assert.equal(source, authorization.approvedSource, 'Approved source commit required');
+  assert.equal(sha256, authorization.approvedSha256, 'Approved exact artifact required');
+  assert.equal(mode, authorization.approvedMode, 'Approved publication mode required');
 }

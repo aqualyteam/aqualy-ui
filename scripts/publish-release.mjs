@@ -3,10 +3,11 @@ import { execFileSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import { policy, git, assertToolchain, assertPublishAuthorized, verifyReceipt } from './release-artifact.mjs';
 
-// This gate runs before npm, network access or credential use. C1 preparation keeps it false.
+// Authorization is checked before npm, network access or credential use.
 const source = process.env.AQUALY_RELEASE_SOURCE;
 const sha = process.env.AQUALY_RELEASE_SHA256;
-assertPublishAuthorized(source, sha);
+const mode = process.argv[2] === '--bootstrap' ? 'bootstrap' : process.argv[2] === '--oidc' ? 'oidc' : undefined;
+assertPublishAuthorized(source, sha, mode);
 assert.equal(git('status', '--porcelain'), '', 'Reviewed clean publisher checkout required');
 assert.ok(process.argv.length === 3 && ['--bootstrap', '--oidc'].includes(process.argv[2]), 'Explicit publication mode required');
 assertToolchain();

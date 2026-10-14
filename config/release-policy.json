@@ -14,5 +14,6 @@
   "npm": "11.16.0",
   "publishEnabled": false,
   "approvedSource": null,
-  "approvedSha256": null
+  "approvedSha256": null,
+  "approvedMode": null
 }

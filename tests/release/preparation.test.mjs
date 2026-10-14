@@ -1,6 +1,6 @@
 import test, { before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile, writeFile, mkdtemp, rm, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdtemp, rm, mkdir, cp, chmod } from 'node:fs/promises';
 import { spawnSync, execFileSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import { root, policy, inspectTarball, verifyReceipt, assertPublishAuthorized } from '../../scripts/release-artifact.mjs';
@@ -8,8 +8,10 @@ import { root, policy, inspectTarball, verifyReceipt, assertPublishAuthorized } 
 let directory, tarball, receipt;
 before(async () => {
   directory = await mkdtemp('/tmp/aqualy-release-contract-');
-  execFileSync('pnpm', ['--filter', '@aqualy/ui', 'pack', '--pack-destination', directory], { cwd: root, stdio: 'pipe' });
   tarball = resolve(directory, `aqualy-ui-${policy.version}.tgz`);
+  if(process.env.AQUALY_RELEASE_TEST_TARBALL) await cp(process.env.AQUALY_RELEASE_TEST_TARBALL,tarball);
+  else execFileSync('pnpm', ['--filter', '@aqualy/ui', 'pack', '--pack-destination', directory], { cwd: root, stdio: 'pipe' });
+  await chmod(tarball, 0o600);
   receipt = { format: 1, status: 'validated-unpublished', repository: policy.repository, sourceCommit: 'a'.repeat(40), sourceManifestSha256: 'a'.repeat(64), toolchain: { node: policy.node, pnpm: policy.pnpm, npm: policy.npm }, publication: false, packageName: policy.packageName, version: policy.version, tag: policy.tag, registry: policy.registry, access: policy.access, tarball: await inspectTarball(tarball), validation: { typesAndNextBuild: 'PASS', exports: 66, singleReact: true, matrices: ['desktop', 'mobile', 'narrow'].flatMap(name => ['workspace', 'professional', 'diver'].flatMap(product => ['light', 'dark'].flatMap(theme => ['ltr', 'rtl'].map(dir => ({ name, product, theme, dir, status: 'PASS', sequentialCycles: 10 }))))) } };
 });
 after(async () => { await rm(directory, { recursive: true }); });
@@ -21,9 +23,13 @@ async function check(value = receipt, source = receipt.sourceCommit, sha = recei
 
 test('unpublished exact candidate has reviewed licenses, exports and all member hashes', async () => {
   assert.equal((await check()).tarball.files.length, 171);
-  assert.equal(policy.publishEnabled, false);
-  assert.equal(policy.approvedSource, null);
-  assert.equal(policy.approvedSha256, null);
+  if(policy.publishEnabled){
+    assert.equal(policy.approvedMode,'bootstrap');
+    assert.equal(policy.approvedSource,'70e1789568621cbef493cd5319b4556cb5704634');
+    assert.equal(policy.approvedSha256,'948552994c0dfc74e15653268872a816f2e2821adc40fcaf6687dc6a453bb48c');
+  }else{
+    assert.equal(policy.approvedSource,null);assert.equal(policy.approvedSha256,null);assert.equal(policy.approvedMode,null);
+  }
 });
 test('wrong artifact hash, source and package identity are rejected', async () => {
   await assert.rejects(check(receipt, 'b'.repeat(40)));
@@ -49,16 +55,24 @@ test('modified archive bytes are rejected even if a receipt is unchanged', async
   try { await assert.rejects(check()); } finally { await writeFile(tarball, original); }
 });
 test('registry publication cannot be enabled by flags, auth environment or dispatch inputs', async () => {
-  assert.throws(() => assertPublishAuthorized('a'.repeat(40), 'a'.repeat(64)), /Publication is disabled/);
+  assert.throws(() => assertPublishAuthorized('a'.repeat(40), 'a'.repeat(64)), /Publication is disabled|Approved source/);
   const fakeBin = resolve(directory, 'bin'); await mkdir(fakeBin);
   for (const mode of ['--bootstrap', '--oidc']) {
     const result = spawnSync(process.execPath, [resolve(root, 'scripts/publish-release.mjs'), mode], {
       env: { ...process.env, PATH: fakeBin, AQUALY_RELEASE_SOURCE: 'a'.repeat(40), AQUALY_RELEASE_SHA256: 'a'.repeat(64), AQUALY_PUBLISH_ENABLED: 'true', GITHUB_ACTIONS: 'true', NODE_AUTH_TOKEN: 'synthetic-invalid-credential' }, encoding: 'utf8'
     });
     assert.equal(result.status, 1);
-    assert.match(result.stderr, /Publication is disabled/);
+    assert.match(result.stderr, /Publication is disabled|Approved source/);
     assert.doesNotMatch(result.stderr, /ENOENT|fetch failed/);
   }
+});
+test('authorization binds source, archive and publication mode without registry access',()=>{
+  const authorized={...policy,publishEnabled:true,approvedSource:'a'.repeat(40),approvedSha256:'b'.repeat(64),approvedMode:'bootstrap'};
+  assert.doesNotThrow(()=>assertPublishAuthorized('a'.repeat(40),'b'.repeat(64),'bootstrap',authorized));
+  assert.throws(()=>assertPublishAuthorized('c'.repeat(40),'b'.repeat(64),'bootstrap',authorized),/Approved source/);
+  assert.throws(()=>assertPublishAuthorized('a'.repeat(40),'c'.repeat(64),'bootstrap',authorized),/Approved exact artifact/);
+  assert.throws(()=>assertPublishAuthorized('a'.repeat(40),'b'.repeat(64),'oidc',authorized),/Approved publication mode/);
+  assert.throws(()=>assertPublishAuthorized('a'.repeat(40),'b'.repeat(64),'bootstrap',{...authorized,publishEnabled:false}),/Publication is disabled/);
 });
 test('OIDC workflow is manual and statically disabled; preparation has no write permissions', async () => {
   const prefix = await readFile(resolve(root, 'package.json'), 'utf8');

@@ -12,6 +12,7 @@ jobs:
     env:
       NEXT_TELEMETRY_DISABLED: '1'
       AQUALY_BROWSER_CHANNEL: chrome
+      AQUALY_RELEASE_TEST_TARBALL: /tmp/aqualy-ui-registry-verified.tgz
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; node24
         with:
@@ -30,11 +31,13 @@ jobs:
           google-chrome --version
       - run: pnpm install --frozen-lockfile
       - run: pnpm verify:public
+      - name: Anonymous exact registry artifact
+        run: node scripts/verify-registry-consumer.mjs --output "$AQUALY_RELEASE_TEST_TARBALL"
       - run: pnpm test
       - run: pnpm typecheck
       - run: pnpm verify:release
-      - name: External tarball consumer and browser matrix
-        run: pnpm test:consumer | tee /tmp/aqualy-ui-consumer-ci.log
+      - name: Anonymous npm Next consumer and browser matrix
+        run: node scripts/verify-c0-consumer.mjs --registry | tee /tmp/aqualy-ui-consumer-ci.log
       - name: Collect synthetic validation artifacts
         if: always()
         run: |
